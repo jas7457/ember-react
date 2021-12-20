@@ -1,13 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
 import ReactDOM from 'react-dom';
 import Component from '@glimmer/component';
+
+// eslint-disable-next-line no-unused-vars
+import Test from './Test';
 
 export default class ReactComponent extends Component {
   onDidInsert(element) {
     console.log('Mounting react component', element);
-    ReactDOM.render(<div>Hello World from react!</div>, element);
+    ReactDOM.render(<Test />, element);
   }
 
   onWillDestroy(element) {
