@@ -6,7 +6,7 @@ module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     babel: {
-      plugins: ['transform-class-properties', 'transform-react-jsx'],
+      plugins: ['transform-react-jsx'],
     },
   });
 
