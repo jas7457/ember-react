@@ -8,7 +8,8 @@
 	],
 	"scripts": {
 		"ember-spa": "yarn workspace ember-spa",
-		"react-spa": "yarn workspace react-spa"
+		"react-spa": "yarn workspace react-spa",
+		"start": "concurrently \"yarn ember-spa start\" \"yarn react-spa start\""
 	},
 	"repository": {
 		"type": "git",
@@ -22,6 +23,7 @@
 	},
 	"homepage": "https://github.com/jas7457/ember-react#readme",
 	"devDependencies": {
+		"concurrently": "^6.5.1",
 		"prettier": "^2.5.1"
 	}
 }
