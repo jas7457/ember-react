@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'ember-react',
+    modulePrefix: 'ember-spa',
     environment,
     rootURL: '/',
     locationType: 'auto',
