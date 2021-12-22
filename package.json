@@ -1,29 +1,31 @@
 {
-	"name": "ember-react",
-	"version": "1.0.0",
-	"description": "",
-	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"ember-spa": "yarn workspace ember-spa",
-		"react-spa": "yarn workspace react-spa",
-		"start": "concurrently \"yarn ember-spa start\" \"yarn react-spa start\""
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jas7457/ember-react.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/jas7457/ember-react/issues"
-	},
-	"homepage": "https://github.com/jas7457/ember-react#readme",
-	"devDependencies": {
-		"concurrently": "^6.5.1",
-		"prettier": "^2.5.1"
-	}
+  "name": "ember-react",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"yarn navbar start:group\" \"yarn people start:group\" \"yarn planets start:group\" \"yarn root-config start:group\" --kill-others",
+    "navbar": "yarn workspace navbar",
+    "people": "yarn workspace people",
+    "planets": "yarn workspace planets",
+    "root-config": "yarn workspace root-config"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jas7457/ember-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jas7457/ember-react/issues"
+  },
+  "homepage": "https://github.com/jas7457/ember-react#readme",
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "prettier": "^2.5.1"
+  }
 }
