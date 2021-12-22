@@ -19,12 +19,16 @@ export default function Page1() {
       </button>
 
       <div style={{ marginTop: 20 }}>
-        <Link to="/page2">React Page 2 (react-router transition)</Link>
+        <Link to="/page2">
+          React Page 2 (react-router transition, Ember will be unaware, active
+          links won't update in the sidebar and the URL won't change)
+        </Link>
       </div>
 
       <div style={{ marginTop: 20 }}>
-        <ExternalLink href="/ember">
-          External link back to Ember route (hacky postMessage to Ember app)
+        <ExternalLink href="/iframe2">
+          React Page 2 (hacky postMessage to Ember app, Ember will take care of
+          navigation)
         </ExternalLink>
       </div>
     </div>
