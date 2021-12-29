@@ -65,3 +65,13 @@ body {
   padding: 1rem;
   border: 1px solid black;
 }
+
+/* testing out that the React components won't get these styles */
+button {
+  background: red;
+  color: white;
+}
+
+.test-class {
+  background: blue !important;
+}

@@ -1,0 +1,23 @@
+<h1>React Route Shadow DOM</h1>
+
+<p>This renders a React component inside of the shadow dom in the Ember app</p>
+
+<p>Note that the Add count button is NOT red, which is a global style set in the Ember app</p>
+
+<div>
+  Pros:
+  <ul>
+    <li>No style bleed</li>
+  </ul>
+</div>
+
+<div>
+  Cons:
+  <ul>
+    <li>Can we even do global or shared styles in the shadow dom? Probably not...</li>
+  </ul>
+</div>
+
+<div class="showcase">
+  <ReactComponentShadowDom />
+</div>

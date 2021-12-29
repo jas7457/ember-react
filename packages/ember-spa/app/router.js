@@ -9,6 +9,7 @@ export default class Router extends EmberRouter {
 Router.map(function () {
   this.route('ember');
   this.route('react');
+  this.route('react-shadow-dom');
   this.route('iframe1');
   this.route('iframe2');
 });
