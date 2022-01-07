@@ -32,6 +32,13 @@ export default function Page2() {
           navigation)
         </ExternalLink>
       </div>
+
+      <div style={{ marginTop: 20 }}>
+        <ExternalLink href="/ember">
+          Back to Ember (hacky postMessage to Ember app, Ember will take care of
+          navigation)
+        </ExternalLink>
+      </div>
     </div>
   );
 }

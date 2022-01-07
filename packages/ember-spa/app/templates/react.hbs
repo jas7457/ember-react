@@ -15,7 +15,7 @@
 <div>
   Cons:
   <ul>
-    <li>We will effectively inherit the css baggage from the Ember app</li>
+    <li>We will effectively inherit the css from the Ember app</li>
     <li>Tightly couples the React components to have a visual style that only works inside of the Ember app</li>
     <li>Constrains what we can do with React - for example, I don't think we could easily set a top-level global React context since it would likely have to be route-scoped React components, not app-scoped.</li>
     <li>Currently there is an issue with ember-cli-typescript that breaks when using jsx. We use this in our ember application. There might be a workaround, but this might be a deal-breaker. I've filed a Github issue <a href="https://github.com/typed-ember/ember-cli-typescript/issues/1459" target="_blank" rel="noopener noreferrer">here</a></li>
